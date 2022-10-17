@@ -9,9 +9,12 @@ Note: Initialize the string with various values and test your program. Assume th
 #Answer:
 
 def check_palindrome(word):
-    pal=(reversed(word))
-    if (pal==word):
-        print("word is palindrome")
-    else:
-        print("word is not palindrome")
+    rev = ''.join(reversed(word))
+    if (word == rev):
+        return True
+    return False
+if (True):
+    print("word is palindrome")
+else:
+    print("word is not palindrome")
 status=check_palindrome("malayalam")
